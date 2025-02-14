@@ -21,10 +21,10 @@
 #     name: common
 #     tasks_from: main
 
-- name: create app directory
-  ansible.builtin.file:
-    state: directory
-    path: /app
+# - name: create app directory
+#   ansible.builtin.file:
+#     state: directory
+#     path: /app
 
 # - name: download the code 
 #   ansible.builtin.get_url:
