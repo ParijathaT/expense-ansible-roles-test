@@ -29,11 +29,11 @@
 #     dest: /tmp/frontend.zip
 #     url: https://expense-builds.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
 
-- name: unzip the code
-  ansible.builtin.unarchive:
-    src: /tmp/frontend.zip
-    dest: /usr/share/nginx/html
-    remote_src: yes
+# - name: unzip the code
+#   ansible.builtin.unarchive:
+#     src: /tmp/frontend.zip
+#     dest: /usr/share/nginx/html
+#     remote_src: yes
 
 - name: copy the expense.conf file 
   ansible.builtin.template:
