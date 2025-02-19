@@ -39,7 +39,7 @@
 
 - name: install nodejs dependies
   community.general.npm:
-    path: /app/
+    path: /app
 
 - name: copy backend service
   ansible.builtin.template:
